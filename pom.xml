@@ -181,7 +181,7 @@
         <module>collectors/scm/github</module>
         <module>collectors/scm/subversion</module>
         <module>collectors/scm/gitlab</module>
-        <module>UI</module>
+        <!--<module>UI</module>-->
       </modules>
       <build>
         <pluginManagement>
