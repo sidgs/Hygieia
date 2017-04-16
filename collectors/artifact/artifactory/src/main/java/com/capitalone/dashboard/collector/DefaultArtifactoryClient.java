@@ -48,7 +48,8 @@ public class DefaultArtifactoryClient implements ArtifactoryClient {
 	private final List<Pattern> artifactPatterns;
 	
 	@Autowired
-	public DefaultArtifactoryClient(ArtifactorySettings artifactorySettings, Supplier<RestOperations> restOperationsSupplier) {
+	public DefaultArtifactoryClient(ArtifactorySettings artifactorySettings,
+									Supplier<RestOperations> restOperationsSupplier) {
         this.artifactorySettings = artifactorySettings;
         this.restOperations = restOperationsSupplier.get();
         this.artifactPatterns = new ArrayList<>();

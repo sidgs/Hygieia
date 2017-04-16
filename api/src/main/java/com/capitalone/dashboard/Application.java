@@ -4,6 +4,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 import javax.servlet.Filter;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
@@ -27,6 +28,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Application configuration and bootstrap
  */
+@EnableAutoConfiguration
 @SpringBootApplication
 @EnableSwagger2
 @EnableEncryptableProperties
