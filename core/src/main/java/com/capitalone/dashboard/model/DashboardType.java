@@ -4,7 +4,7 @@ package com.capitalone.dashboard.model;
  * Defines the type of {@link Dashboard}.
  */
 public enum DashboardType {
-    Product,
+    Product,Enterprise,
     Team;
 
     public static DashboardType fromString(String value){

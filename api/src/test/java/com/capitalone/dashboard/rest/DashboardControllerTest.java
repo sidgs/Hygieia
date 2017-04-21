@@ -93,6 +93,16 @@ public class DashboardControllerTest {
                 .content(TestUtil.convertObjectToJsonBytes(request)))
             .andExpect(status().isCreated());
     }
+
+    @Test
+    public void createEnterpriseDashboard() throws Exception {
+        DashboardRequest request = makeDashboardRequest("template", "dashboard title",
+                "app", "comp","amit", null, "enterprise");
+        mockMvc.perform(post("/dashboard")
+                .contentType(TestUtil.APPLICATION_JSON_UTF8)
+                .content(TestUtil.convertObjectToJsonBytes(request)))
+                .andExpect(status().isCreated());
+    }
     
     public void createDashboard_nullRequest() throws Exception {
         mockMvc.perform(post("/dashboard")
